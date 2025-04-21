@@ -1,0 +1,427 @@
+<!-- Hero Section with Parallax Effect -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Parallax Background with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-10 bg-gradient-to-b from-emerald-700/70 to-emerald-900/80 md:hidden"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 z-10 "></div>
+    <img 
+      src="assets/profile.jpeg" 
+      alt="Hero Background" 
+      class="w-full h-full object-contain md:object-cover"
+      [ngStyle]="{'transform': 'translateY(' + (scrollPosition * 0.3) + 'px)'}"
+    >
+  </div>
+
+  <!-- Hero Content -->
+  <div class="container mx-auto px-4 relative z-20 text-center">
+    <div class="max-w-4xl mx-auto" [@fadeIn]>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        My Journey Through <span class="text-emerald-400">Multiple Fractures</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed">
+        Sharing my experiences and insights on recovery from multiple fractures and navigating physiotherapy.
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Story Section with Timeline -->
+<section class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-gray-200">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16" [@fadeIn]>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Recovery Journey</h2>
+      <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-300">
+        From the accident to recovery, this is my story of resilience and healing.
+      </p>
+    </div>
+
+    <!-- Timeline Component -->
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Timeline Line -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-emerald-500/30"></div>
+
+      <!-- Timeline Item 1 -->
+      <div class="relative mb-20" [@slideInLeft]>
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Timeline Dot -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          
+          <!-- Date Badge -->
+          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              October 24, 2024
+            </span>
+          </div>
+          
+          <!-- Content Card -->
+          <div class="md:w-1/2 md:pl-12">
+            <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+              <h3 class="text-2xl font-semibold text-white mb-3">The Accident</h3>
+              <p class="text-gray-300">
+                Life took an unexpected turn during a bike accident. Despite wearing protective gear, the impact was severe, resulting in multiple fractures including both femurs, right patella, right tibia and fibula, and wrist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="relative mb-20" [@slideInRight]>
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Timeline Dot -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          
+          <!-- Content Card (Left Side) -->
+          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+            <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+              <h3 class="text-2xl font-semibold text-white mb-3">Initial Surgery</h3>
+              <p class="text-gray-300">
+                The day after the accident, I underwent surgery to stabilize these fractures. Titanium rods, screws, and a Tension Band Wiring (TBW) technique were used to fix the leg fractures. My wrist was also treated surgically.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Date Badge (Right Side) -->
+          <div class="md:w-1/2 md:pl-12">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              October 25, 2024
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="relative mb-20" [@slideInLeft]>
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Timeline Dot -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          
+          <!-- Date Badge -->
+          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              February 10, 2025
+            </span>
+          </div>
+          
+          <!-- Content Card -->
+          <div class="md:w-1/2 md:pl-12">
+            <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+              <h3 class="text-2xl font-semibold text-white mb-3">Arthroscopic Arthrolysis</h3>
+              <p class="text-gray-300">
+                By the end of January 2025, my right knee flexion was severely limited, only reaching a range of 0 to 20 degrees. I underwent arthroscopic arthrolysis to remove the severe adhesions (scar tissue) that had formed within and around my knee joint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="relative" [@slideInRight]>
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Timeline Dot -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          
+          <!-- Content Card (Left Side) -->
+          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+            <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+              <h3 class="text-2xl font-semibold text-white mb-3">Recovery Milestone</h3>
+              <p class="text-gray-300">
+                I'm incredibly grateful to have achieved 120 degrees of active knee flexion, a testament to the continuous and dedicated physiotherapy I've been undergoing.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Date Badge (Right Side) -->
+          <div class="md:w-1/2 md:pl-12">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              April 19, 2025
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- X-Ray Gallery Section -->
+<section class="py-20 bg-gray-800">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16" [@fadeIn]>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Post-Surgery X-Rays</h2>
+      <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-300">
+        Medical imaging showing the surgical interventions that stabilized my fractures.
+      </p>
+    </div>
+
+    <!-- X-Ray Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- X-Ray Card 1 -->
+      <div class="group" [@fadeIn]>
+        <div class="overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-xl transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-500/30 h-full">
+          <div class="relative overflow-hidden">
+            <img 
+              src="assets/wrist.jpeg" 
+              alt="Post-Surgery Wrist X-ray" 
+              class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Wrist Fracture</h3>
+            <p class="text-gray-400">Post-surgery X-ray showing the fixation of my wrist fracture with surgical hardware.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- X-Ray Card 2 -->
+      <div class="group" [@fadeIn]>
+        <div class="overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-xl transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-500/30 h-full">
+          <div class="relative overflow-hidden">
+            <img 
+              src="assets/left-femur.jpeg" 
+              alt="Post-Surgery Left Femur X-ray" 
+              class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Left Femur</h3>
+            <p class="text-gray-400">Post-surgery X-ray showing the titanium rod stabilizing my left femur fracture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- X-Ray Card 3 -->
+      <div class="group" [@fadeIn]>
+        <div class="overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-xl transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-500/30 h-full">
+          <div class="relative overflow-hidden">
+            <img 
+              src="assets/right-femur.jpeg" 
+              alt="Post-Surgery Right Femur X-ray" 
+              class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Right Femur</h3>
+            <p class="text-gray-400">Post-surgery X-ray showing the titanium rod stabilizing my right femur fracture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- X-Ray Card 4 -->
+      <div class="group" [@fadeIn]>
+        <div class="overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-xl transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-500/30 h-full">
+          <div class="relative overflow-hidden">
+            <img 
+              src="assets/patella.jpeg" 
+              alt="Post-Surgery Right Patella X-ray" 
+              class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Right Patella</h3>
+            <p class="text-gray-400">Post-surgery X-ray showing the Tension Band Wiring (TBW) technique used to fix my right patella fracture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- X-Ray Card 5 -->
+      <div class="group md:col-span-2 lg:col-span-1" [@fadeIn]>
+        <div class="overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-xl transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-500/30 h-full">
+          <div class="relative overflow-hidden">
+            <img 
+              src="assets/tibia.jpeg" 
+              alt="Post-Surgery Right Tibia and Fibula X-ray" 
+              class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Right Tibia and Fibula</h3>
+            <p class="text-gray-400">Post-surgery X-ray showing the fixation of my right tibia and fibula fractures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Physiotherapy Section -->
+<section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16" [@fadeIn]>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">The Crucial Role of Physiotherapy</h2>
+      <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-300">
+        How dedicated rehabilitation has been key to my recovery journey.
+      </p>
+    </div>
+
+    <!-- Physiotherapy Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700 shadow-lg hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all" [@slideInLeft]>
+        <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-4">Muscle Strengthening</h3>
+        <p class="text-gray-300">
+          Building strength in the muscles surrounding the injured areas (quadriceps, hamstrings, calves, glutes, hip, and wrist muscles) is vital for stability, support, and regaining function. Strong muscles help protect the healing bones and joints.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700 shadow-lg hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all" [@slideInRight]>
+        <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-4">Active Movements</h3>
+        <p class="text-gray-300">
+          Engaging in active movements of all affected joints, including the knee and wrist, is key to regaining range of motion and control. Initially, for my knee, this involved passive movement with a Continuous Passive Motion (CPM) machine post-surgery, gradually progressing to active exercises.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700 shadow-lg hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all" [@slideInLeft]>
+        <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-4">Overcoming Pain Barriers</h3>
+        <p class="text-gray-300">
+          While it's important to listen to your body, overcoming the fear of pain and gradually pushing your limits under the guidance of a physiotherapist is crucial for progress. Differentiating between "good pain" (muscle soreness) and "bad pain" (sharp, joint pain) is essential.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700 shadow-lg hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all" [@slideInRight]>
+        <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-4">Neuromuscular Re-education</h3>
+        <p class="text-gray-300">
+          This involves retraining the connection between your brain and your muscles. After injury and surgery, these pathways can be disrupted. Exercises that focus on balance, coordination, and controlled movements of all affected limbs help re-establish these connections, leading to better control and stability.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inspiration Section -->
+<section class="py-20 bg-gray-900 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <defs>
+        <pattern id="pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M0 20 L40 20 M20 0 L20 40" stroke="currentColor" stroke-width="1" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#pattern)" />
+    </svg>
+  </div>
+
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+    <div class="max-w-4xl mx-auto bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-2xl p-1">
+      <div class="bg-gray-900 rounded-xl p-10 md:p-16">
+        <div class="text-center" [@fadeIn]>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-emerald-500 mx-auto mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">A Message of Hope and Encouragement</h2>
+          <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+            If you're reading this and facing a similar journey, please know that <span class="text-emerald-400 font-semibold">recovery is absolutely possible</span>. It requires commitment, consistency with your physiotherapy program, dedicated effort to strengthen your body, and a positive mindset. There will be challenges and setbacks, but by staying persistent, focusing on active movements, and believing in your ability to heal, you can regain your strength and mobility.
+          </p>
+          <p class="text-xl font-semibold text-emerald-400">
+            Stay consistent, strengthen yourself, and stay positive – you've got this!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress Tracker Section (Optional) -->
+<section class="py-20 bg-gray-800">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16" [@fadeIn]>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Recovery Progress</h2>
+      <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-300">
+        Tracking my journey from limited mobility to increasing range of motion.
+      </p>
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="max-w-3xl mx-auto space-y-8">
+      <!-- Progress Item 1 -->
+      <div class="space-y-2" [@fadeIn]>
+        <div class="flex justify-between">
+          <span class="text-white font-medium">Right Knee Flexion</span>
+          <span class="text-emerald-400 font-medium">120°</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-400 to-emerald-600 h-full rounded-full" style="width: 80%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-400">
+          <span>Initial: 20°</span>
+          <span>Goal: 150°</span>
+        </div>
+      </div>
+
+      <!-- Progress Item 2 -->
+      <div class="space-y-2" [@fadeIn]>
+        <div class="flex justify-between">
+          <span class="text-white font-medium">Quadriceps Strength</span>
+          <span class="text-emerald-400 font-medium">65%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-400 to-emerald-600 h-full rounded-full" style="width: 65%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-400">
+          <span>Initial: 15%</span>
+          <span>Goal: 100%</span>
+        </div>
+      </div>
+
+      <!-- Progress Item 3 -->
+      <div class="space-y-2" [@fadeIn]>
+        <div class="flex justify-between">
+          <span class="text-white font-medium">Walking Distance</span>
+          <span class="text-emerald-400 font-medium">1.5 km</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-400 to-emerald-600 h-full rounded-full" style="width: 50%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-400">
+          <span>Initial: 0 km</span>
+          <span>Goal: 3 km</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

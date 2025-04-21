@@ -1,0 +1,398 @@
+<section class="bg-gradient-to-b from-gray-900 to-gray-800 py-16 text-gray-300 min-h-screen">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <div class="max-w-4xl mx-auto mb-12 text-center" [@fadeIn]>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-6">Muscle Strengthening for Knee Recovery</h1>
+      <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-300 mb-8">
+        Targeted exercises to rebuild strength, improve stability, and reduce pain during your recovery journey.
+      </p>
+    </div>
+
+    <!-- Benefits Card -->
+    <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700 shadow-lg mb-12 max-w-4xl mx-auto" [@slideInUp]>
+      <h2 class="text-2xl font-semibold text-white mb-4 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        Why Muscle Strengthening Matters
+      </h2>
+      
+      <p class="mb-4">
+        Strong muscles around the knee joint play a crucial role in its stability and function. Weak muscles can contribute to increased stress on the knee, leading to pain and discomfort. Strengthening these muscles helps to:
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="flex items-start">
+          <div class="bg-emerald-500/20 rounded-full p-2 mr-3 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white">Provide Support</h3>
+            <p class="text-gray-300">Strong quadriceps, hamstrings, and calf muscles help to stabilize the knee joint during movement and weight-bearing activities.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-emerald-500/20 rounded-full p-2 mr-3 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white">Absorb Shock</h3>
+            <p class="text-gray-300">Well-developed muscles act as shock absorbers, reducing the impact forces transmitted through the knee.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-emerald-500/20 rounded-full p-2 mr-3 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white">Improve Alignment</h3>
+            <p class="text-gray-300">Balanced muscle strength around the knee helps maintain proper joint alignment, preventing uneven wear and tear.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start">
+          <div class="bg-emerald-500/20 rounded-full p-2 mr-3 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white">Enhance Mobility</h3>
+            <p class="text-gray-300">Improved muscle strength often leads to better range of motion and overall knee function.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-gray-700/50 rounded-lg p-4 border-l-4 border-emerald-500">
+        <p class="text-gray-300">
+          Incorporating regular strengthening exercises into your physiotherapy routine is essential for long-term knee health and pain management. Remember to always perform these exercises with proper form and under the guidance of your physiotherapist.
+        </p>
+      </div>
+    </div>
+
+    <!-- Exercise Tabs -->
+    <div class="max-w-5xl mx-auto mb-12" [@fadeIn]>
+      <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        </svg>
+        Physiotherapy Exercises
+      </h2>
+      
+      <!-- Tab Navigation -->
+      <div class="flex flex-wrap border-b border-gray-700 mb-8">
+        <button 
+          *ngFor="let tab of tabs" 
+          class="px-6 py-3 font-medium transition-colors duration-300 focus:outline-none"
+          [ngClass]="{'text-emerald-400 border-b-2 border-emerald-400': activeTab === tab.id, 'text-gray-400 hover:text-white': activeTab !== tab.id}"
+          (click)="setActiveTab(tab.id)">
+          {{ tab.name }}
+        </button>
+      </div>
+      
+      <!-- Exercise Cards Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Quadriceps Exercises -->
+        <ng-container *ngIf="activeTab === 'quadriceps' || activeTab === 'all'">
+          <!-- Exercise Card 1 -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-all duration-300 hover:shadow-emerald-500/10 hover:border-emerald-500/30" [@fadeIn]>
+            <!-- Card Header -->
+            <div class="bg-gray-700/50 px-6 py-4 flex justify-between items-center">
+              <h3 class="text-xl font-semibold text-white">Quadriceps Sets</h3>
+              <div class="flex items-center space-x-2">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Beginner</span>
+                <button class="text-gray-400 hover:text-emerald-400 transition-colors" (click)="toggleFavorite('quad_sets')">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="{'text-emerald-400 fill-emerald-400': isFavorite('quad_sets'), 'text-gray-400': !isFavorite('quad_sets')}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Card Content -->
+            <div class="p-6">
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-300 mb-2">How to do it:</h4>
+                <p class="text-gray-300">
+                  Sit or lie down with your leg straight. Tighten the muscles on the front of your thigh (quadriceps) as much as you can, as if you are trying to straighten your knee fully and lift your heel slightly off the ground (even if it doesn't actually lift). Hold for 5-10 seconds, then relax.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Sets: 3</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Reps: 10-15</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Hold: 5-10 sec</span>
+                </div>
+              </div>
+              
+              <!-- Video Section -->
+              <div class="relative rounded-lg overflow-hidden bg-gray-900">
+                <div class="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/5TUK4uT2nnw?si=r4mnJq2OjprsX9KW" 
+                    title="Quadriceps Sets Exercise" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              
+              <!-- Progress Tracker -->
+              
+            </div>
+          </div>
+          
+          <!-- Exercise Card 2 -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-all duration-300 hover:shadow-emerald-500/10 hover:border-emerald-500/30" [@fadeIn]>
+            <!-- Card Header -->
+            <div class="bg-gray-700/50 px-6 py-4 flex justify-between items-center">
+              <h3 class="text-xl font-semibold text-white">Straight Leg Raises</h3>
+              <div class="flex items-center space-x-2">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Beginner</span>
+                <button class="text-gray-400 hover:text-emerald-400 transition-colors" (click)="toggleFavorite('leg_raises')">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="{'text-emerald-400 fill-emerald-400': isFavorite('leg_raises'), 'text-gray-400': !isFavorite('leg_raises')}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Card Content -->
+            <div class="p-6">
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-300 mb-2">How to do it:</h4>
+                <p class="text-gray-300">
+                  Lie on your back with one leg bent and the other leg straight. Tighten the quadriceps of your straight leg and slowly lift it off the ground about 6-12 inches, keeping your knee straight. Hold for a few seconds, then slowly lower it back down.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Sets: 3</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Reps: 10-15</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Hold: 3-5 sec</span>
+                </div>
+              </div>
+              
+              <!-- Video Section -->
+              <div class="relative rounded-lg overflow-hidden bg-gray-900">
+                <div class="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/U4L_6JEv9Jg?si=2_B-JJEGTI05cKnV" 
+                    title="Straight Leg Raises Exercise" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              
+              <!-- Progress Tracker -->
+              
+            </div>
+          </div>
+        </ng-container>
+        
+        <!-- Hamstring Exercises -->
+        <ng-container *ngIf="activeTab === 'hamstring' || activeTab === 'all'">
+          <!-- Exercise Card -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-all duration-300 hover:shadow-emerald-500/10 hover:border-emerald-500/30" [@fadeIn]>
+            <!-- Card Header -->
+            <div class="bg-gray-700/50 px-6 py-4 flex justify-between items-center">
+              <h3 class="text-xl font-semibold text-white">Hamstring Curls</h3>
+              <div class="flex items-center space-x-2">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Beginner</span>
+                <button class="text-gray-400 hover:text-emerald-400 transition-colors" (click)="toggleFavorite('hamstring_curls')">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="{'text-emerald-400 fill-emerald-400': isFavorite('hamstring_curls'), 'text-gray-400': !isFavorite('hamstring_curls')}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Card Content -->
+            <div class="p-6">
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-300 mb-2">How to do it:</h4>
+                <p class="text-gray-300">
+                  Lie on your stomach with your legs straight. Slowly bend one knee, bringing your heel towards your buttocks. Hold for a few seconds, then slowly lower your leg down.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Sets: 3</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Reps: 10-15</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Hold: 3-5 sec</span>
+                </div>
+              </div>
+              
+              <!-- Video Section -->
+              <div class="relative rounded-lg overflow-hidden bg-gray-900">
+                <div class="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/f31CelTNmVg?si=6KhiEpHR_Vp0CQ70" 
+                    title="Hamstring Curls Exercise" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </ng-container>
+        
+        <!-- Glutes Exercises -->
+        <ng-container *ngIf="activeTab === 'glutes' || activeTab === 'all'">
+          <!-- Exercise Card -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-all duration-300 hover:shadow-emerald-500/10 hover:border-emerald-500/30" [@fadeIn]>
+            <!-- Card Header -->
+            <div class="bg-gray-700/50 px-6 py-4 flex justify-between items-center">
+              <h3 class="text-xl font-semibold text-white">Glute Bridges</h3>
+              <div class="flex items-center space-x-2">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Beginner</span>
+                <button class="text-gray-400 hover:text-emerald-400 transition-colors" (click)="toggleFavorite('glute_bridges')">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="{'text-emerald-400 fill-emerald-400': isFavorite('glute_bridges'), 'text-gray-400': !isFavorite('glute_bridges')}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Card Content -->
+            <div class="p-6">
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-300 mb-2">How to do it:</h4>
+                <p class="text-gray-300">
+                  Lie on your back with your knees bent and feet flat on the floor, hip-width apart. Engage your glutes and lift your hips off the floor until your body forms a straight line from your shoulders to your knees. Hold for a few seconds, then slowly lower your hips back down.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Sets: 3</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Reps: 10-15</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Hold: 3-5 sec</span>
+                </div>
+              </div>
+              
+              <!-- Video Section -->
+              <div class="relative rounded-lg overflow-hidden bg-gray-900">
+                <div class="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/YRqoIM0u0PY?si=amwa7TZSEacfcp6H" 
+                    title="Glute Bridges Exercise" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+        </ng-container>
+        
+        <!-- Calf Exercises -->
+        <ng-container *ngIf="activeTab === 'calf' || activeTab === 'all'">
+          <!-- Exercise Card -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 shadow-lg transition-all duration-300 hover:shadow-emerald-500/10 hover:border-emerald-500/30" [@fadeIn]>
+            <!-- Card Header -->
+            <div class="bg-gray-700/50 px-6 py-4 flex justify-between items-center">
+              <h3 class="text-xl font-semibold text-white">Calf Raises</h3>
+              <div class="flex items-center space-x-2">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Beginner</span>
+                <button class="text-gray-400 hover:text-emerald-400 transition-colors" (click)="toggleFavorite('calf_raises')">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="{'text-emerald-400 fill-emerald-400': isFavorite('calf_raises'), 'text-gray-400': !isFavorite('calf_raises')}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Card Content -->
+            <div class="p-6">
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-300 mb-2">How to do it:</h4>
+                <p class="text-gray-300">
+                  Stand with your feet flat on the floor, shoulder-width apart. You can hold onto a chair or wall for balance. Slowly rise up onto the balls of your feet, lifting your heels off the ground as high as comfortable. Hold for a second, then slowly lower your heels back down.
+                </p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Sets: 3</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Reps: 15-20</span>
+                  <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Hold: 1-2 sec</span>
+                </div>
+              </div>
+              
+              <!-- Video Section -->
+              <div class="relative rounded-lg overflow-hidden bg-gray-900">
+                <div class="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/Mjkh9vBfm_E?si=X1Xr8lUbBVr7DRBy" 
+                    title="Calf Raises Exercise" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    
+    <!-- Important Note -->
+    <div class="max-w-4xl mx-auto mt-12 bg-gray-800/50 rounded-xl p-6 border-l-4 border-yellow-500 shadow-lg" [@fadeIn]>
+      <div class="flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <p class="text-gray-300">
+          <span class="font-semibold text-white">Important Note:</span> This is just a sample of exercises. Your physiotherapy program should be tailored to your specific needs and recovery stage. Always consult with your physiotherapist before starting any new exercises or if you experience any pain.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Favorites Section (Optional) -->
+    <div *ngIf="hasFavorites()" class="max-w-4xl mx-auto mt-12" [@fadeIn]>
+      <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+        Your Favorite Exercises
+      </h2>
+      
+      <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div *ngFor="let favorite of getFavorites()" class="bg-gray-700/50 rounded-lg p-4 flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold text-white">{{ getExerciseName(favorite) }}</h3>
+              <p class="text-xs text-gray-400">{{ getMuscleGroup(favorite) }}</p>
+            </div>
+            <button class="text-emerald-400 hover:text-emerald-300" (click)="toggleFavorite(favorite)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
