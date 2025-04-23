@@ -47,24 +47,24 @@
 
     <!-- Timeline Component -->
     <div class="relative max-w-4xl mx-auto">
-      <!-- Timeline Line -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-emerald-500/30"></div>
+      <!-- Timeline Line - Hidden on mobile to fix the green line issue -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-emerald-500/30 hidden md:block"></div>
 
       <!-- Timeline Item 1 -->
       <div class="relative mb-20" [@slideInLeft]>
         <div class="flex flex-col md:flex-row items-center">
-          <!-- Timeline Dot -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          <!-- Timeline Dot - Hidden on mobile -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800 hidden md:block"></div>
           
-          <!-- Date Badge -->
-          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+          <!-- Date Badge - Always on top for mobile -->
+          <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
             <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
               October 24, 2024
             </span>
           </div>
           
           <!-- Content Card -->
-          <div class="md:w-1/2 md:pl-12">
+          <div class="w-full md:w-1/2 md:pl-12">
             <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
               <h3 class="text-2xl font-semibold text-white mb-3">The Accident</h3>
               <p class="text-gray-300">
@@ -78,11 +78,18 @@
       <!-- Timeline Item 2 -->
       <div class="relative mb-20" [@slideInRight]>
         <div class="flex flex-col md:flex-row items-center">
-          <!-- Timeline Dot -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          <!-- Timeline Dot - Hidden on mobile -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800 hidden md:block"></div>
           
-          <!-- Content Card (Left Side) -->
-          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+          <!-- Date Badge - Always on top for mobile -->
+          <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right order-first md:order-first">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              October 25, 2024
+            </span>
+          </div>
+          
+          <!-- Content Card -->
+          <div class="w-full md:w-1/2 md:pl-12">
             <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
               <h3 class="text-2xl font-semibold text-white mb-3">Initial Surgery</h3>
               <p class="text-gray-300">
@@ -90,31 +97,24 @@
               </p>
             </div>
           </div>
-          
-          <!-- Date Badge (Right Side) -->
-          <div class="md:w-1/2 md:pl-12">
-            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
-              October 25, 2024
-            </span>
-          </div>
         </div>
       </div>
 
       <!-- Timeline Item 3 -->
       <div class="relative mb-20" [@slideInLeft]>
         <div class="flex flex-col md:flex-row items-center">
-          <!-- Timeline Dot -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          <!-- Timeline Dot - Hidden on mobile -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800 hidden md:block"></div>
           
-          <!-- Date Badge -->
-          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+          <!-- Date Badge - Always on top for mobile -->
+          <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
             <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
               February 10, 2025
             </span>
           </div>
           
           <!-- Content Card -->
-          <div class="md:w-1/2 md:pl-12">
+          <div class="w-full md:w-1/2 md:pl-12">
             <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
               <h3 class="text-2xl font-semibold text-white mb-3">Arthroscopic Arthrolysis</h3>
               <p class="text-gray-300">
@@ -128,24 +128,24 @@
       <!-- Timeline Item 4 -->
       <div class="relative" [@slideInRight]>
         <div class="flex flex-col md:flex-row items-center">
-          <!-- Timeline Dot -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800"></div>
+          <!-- Timeline Dot - Hidden on mobile -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-emerald-500 z-10 border-4 border-gray-800 hidden md:block"></div>
           
-          <!-- Content Card (Left Side) -->
-          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
+          <!-- Date Badge - Always on top for mobile -->
+          <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right order-first md:order-first">
+            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
+              April 19, 2025
+            </span>
+          </div>
+          
+          <!-- Content Card -->
+          <div class="w-full md:w-1/2 md:pl-12">
             <div class="bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
               <h3 class="text-2xl font-semibold text-white mb-3">Recovery Milestone</h3>
               <p class="text-gray-300">
                 I'm incredibly grateful to have achieved 120 degrees of active knee flexion, a testament to the continuous and dedicated physiotherapy I've been undergoing.
               </p>
             </div>
-          </div>
-          
-          <!-- Date Badge (Right Side) -->
-          <div class="md:w-1/2 md:pl-12">
-            <span class="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full font-medium">
-              April 19, 2025
-            </span>
           </div>
         </div>
       </div>
@@ -424,4 +424,3 @@
     </div>
   </div>
 </section>
-
