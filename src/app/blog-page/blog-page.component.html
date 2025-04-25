@@ -1,0 +1,253 @@
+<!-- Blog Hero Section -->
+<section class="relative py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-gray-200">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-10" [@fadeIn]>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Building My Recovery Blog</h1>
+        <div class="w-20 h-1 bg-emerald-500 mx-auto mb-6"></div>
+        <p class="text-lg text-gray-300">
+          A Behind-the-Scenes Look at Creating "Rebuilding Strength"
+        </p>
+        <div class="mt-6 text-sm text-gray-400">
+          <span>Published: April 25, 2025</span>
+          <span class="mx-2">•</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Content Section -->
+  <section class="py-12 bg-gray-800">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto bg-gray-800/50 rounded-xl p-6 md:p-10 border border-gray-700 shadow-lg" [@fadeIn]>
+        
+        <!-- Introduction -->
+        <div class="prose prose-invert max-w-none">
+          <p class="text-gray-300 text-lg">
+            Welcome to the first post in my blog! I wanted to take some time to share the journey of creating this website – the technology I used, the motivations behind it, and how artificial intelligence played a surprising role in bringing it to life.
+          </p>
+        </div>
+  
+        <!-- Tech Stack Section -->
+        <div class="mt-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">The Tech Stack</h2>
+          <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Angular -->
+              <div class="flex flex-col items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+                <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 8.33l1.79 14.96L12 22l8.21-1.29L22 8.33 12 2z"></path>
+                    <path d="M12 2v20"></path>
+                    <path d="M2 8.33h20"></path>
+                    <path d="m7 17 5-9 5 9"></path>
+                    <path d="M7 17h10"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Angular</h3>
+                <p class="text-gray-400 text-center text-sm">
+                  Component-based architecture with TypeScript for a robust frontend
+                </p>
+              </div>
+              
+              <!-- Tailwind CSS -->
+              <div class="flex flex-col items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+                <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                    <path d="M12 8v8"></path>
+                    <path d="M8 12h8"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Tailwind CSS</h3>
+                <p class="text-gray-400 text-center text-sm">
+                  Utility-first CSS framework for rapid styling and responsive design
+                </p>
+              </div>
+              
+              <!-- Vercel -->
+              <div class="flex flex-col items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-emerald-500/30 transition-all">
+                <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 19.8h20L12 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Vercel</h3>
+                <p class="text-gray-400 text-center text-sm">
+                  Hosting platform with excellent performance and easy deployment
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-gray-300">
+            <p class="mb-4">
+              For this website, I chose to build it using the following technologies:
+            </p>
+            <ul class="list-disc pl-6 space-y-4">
+              <li>
+                <span class="text-emerald-400 font-medium">Angular:</span> The frontend is built with Angular. I opted for Angular because of its robust structure, component-based architecture, and strong support for building scalable and maintainable single-page applications. Its features like TypeScript and the Angular CLI made the development process much smoother.
+              </li>
+              <li>
+                <span class="text-emerald-400 font-medium">Tailwind CSS:</span> For styling, I used Tailwind CSS. This utility-first CSS framework allowed me to rapidly prototype and style the website with a consistent and modern look without writing a lot of custom CSS. The responsive design capabilities of Tailwind were also crucial for ensuring the site looks good on all devices.
+              </li>
+              <li>
+                <span class="text-emerald-400 font-medium">Vercel:</span> I chose Vercel for hosting the website. Vercel provides excellent performance, easy deployment, and automatic HTTPS, making it a fantastic platform for modern web applications.
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Motivation Section -->
+        <div class="mt-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">The Motivation Behind "Rebuilding Strength"</h2>
+          <div class="text-gray-300">
+            <p class="mb-4">
+              The motivation for creating "Rebuilding Strength" is deeply personal. After my bike accident on October 24, 2024, and the subsequent journey through multiple fractures and physiotherapy, I realized the importance of sharing experiences and providing support to others facing similar challenges.
+            </p>
+            <p>
+              I wanted to create a space where I could document my recovery, share insights gained from physiotherapy, and offer encouragement. Knowing that others might find solace, information, or even just a sense of not being alone in their struggles was a powerful driving force behind building this blog.
+            </p>
+          </div>
+        </div>
+  
+        <!-- AI Role Section -->
+        <div class="mt-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">The Empowering Role of AI in Building This Website</h2>
+          <div class="text-gray-300">
+            <p class="mb-4">
+              Artificial intelligence played a surprisingly significant and empowering role in bringing "Rebuilding Strength" to life, particularly in the rapid prototyping of the user interface.
+            </p>
+            
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">V0 by Vercel: Intelligent UI Generation and Iterative Refinement</h3>
+            <p class="mb-4">
+              The foundation of the website's modern UI was rapidly generated using V0 by Vercel. This impressive AI tool can interpret relatively abstract prompts and produce contemporary-looking UI components with remarkable speed. For instance, a simple prompt like "a home page layout with a hero section and content section which includes about injury and surgeries, sharing x-ray images, role of physiotherapy, current progress and message for others" could generate a sophisticated starting point.
+            </p>
+  
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">Iterative Prompting for Desired Output</h3>
+            <p class="mb-4">
+              The real power of V0 lies in its ability to be refined through subsequent prompts. After the initial generation, I would provide more specific instructions to tailor the components to my exact needs. This involved:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-4">
+              <li><span class="text-emerald-400 font-medium">Altering Styles:</span> Prompting for changes in colors, typography, spacing, and overall aesthetic.</li>
+              <li><span class="text-emerald-400 font-medium">Modifying Layout:</span> Requesting adjustments to the arrangement of elements, responsiveness for different screen sizes, and specific grid configurations.</li>
+              <li><span class="text-emerald-400 font-medium">Adding Features:</span> Asking for interactive elements like buttons, carousels, or specific data displays.</li>
+              <li><span class="text-emerald-400 font-medium">Integrating Specific Content:</span> Describing the kind of text, images, or data that should be included in the generated components.</li>
+            </ul>
+            <p class="mb-4">
+              This iterative process of prompting and refining allowed me to quickly move from a general idea to a more polished and functional UI, which I then integrated into my Angular application.
+            </p>
+  
+            <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-700 my-8">
+              <h4 class="text-lg font-semibold text-white mb-4">Example of Iterative Prompting:</h4>
+              
+              <div class="mb-6">
+                <h5 class="text-emerald-400 font-medium mb-2">X-ray Images:</h5>
+                <p class="text-gray-400">
+                  Initially, the prompt included "a section to display x-ray images." To refine this, I provided a more detailed prompt: "a layout to display five x-ray images. The first image is of my wrist post-surgery, the second of my left femur post-surgery, the third of my right femur post-surgery, the fourth of my right patella post-surgery, and the fifth of my right tibia and fibula post-surgery. Below each image, include a small caption describing what it shows." This level of detail ensured the AI generated a structure that directly addressed my needs.
+                </p>
+              </div>
+              
+              <div>
+                <h5 class="text-emerald-400 font-medium mb-2">Physiotherapy Exercises:</h5>
+                <p class="text-gray-400">
+                  My initial prompt might have been "a section listing physiotherapy exercises for knee recovery." To get more specific and useful output, I used iterative prompting: "Include a section with exercises for quadriceps, hamstrings, glutes, and calves. For the quadriceps, include 'Quadriceps Sets' and 'Straight Leg Raises' with instructions on how to perform each. For 'Quadriceps Sets', include a link to [YouTube Link for Quad Sets]. For 'Straight Leg Raises', include a link to [YouTube Link for SLR]. Similarly, provide instructions and relevant YouTube links for hamstring curls, glute bridges, and calf raises." This guided the AI to include specific exercises, instructions, and even placeholders for the video links I intended to use.
+                </p>
+              </div>
+            </div>
+  
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">Gemini: Content Refinement and Clarity</h3>
+            <p class="mb-4">
+              For the written content across the website, including this blog post, I utilized Gemini. This AI language model proved invaluable in refining my writing, ensuring clarity, improving flow, and suggesting alternative phrasing to better convey my experiences and insights. It helped me polish the language and make the content more engaging and accessible to readers.
+            </p>
+  
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">Few-Shot Prompting with V0 for UI Design</h3>
+            <p class="mb-4">
+              For the UI design using V0 by Vercel, I found few-shot prompting particularly useful in guiding the AI towards my desired aesthetic. Instead of relying solely on abstract descriptions, I would often provide V0 with a few examples of existing UI components or website sections that resonated with the modern and clean look I envisioned for "Rebuilding Strength." For instance, when prompting for the navigation bar, I might have initially shown V0 examples of navigation menus from other health and recovery-focused websites that I found visually appealing and user-friendly. This provided V0 with concrete visual cues, enabling it to generate initial designs that were more aligned with my preferences right from the start, reducing the number of purely descriptive prompts needed.
+            </p>
+  
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">Reducing Hallucination with Gemini for Accurate Content</h3>
+            <p class="mb-4">
+              When using Gemini for drafting content, especially concerning details about my injuries and physiotherapy, reducing hallucination was paramount. To achieve this, I consistently provided Gemini with specific factual information and context directly within my prompts. For example, when asking it to describe my fractures, I would explicitly list "bilateral femur fractures, right patella fracture, right tibia and fibula fractures, and a wrist fracture," along with the date of the accident and surgery. This grounded the AI in verifiable facts, minimizing the risk of it generating inaccurate or speculative details. Furthermore, for medical terminology or explanations of physiotherapy techniques, I would often provide brief definitions or context to ensure accuracy.
+            </p>
+  
+            <h3 class="text-xl font-semibold text-white mt-8 mb-4">Giving Gemini "Time to Think" for Comprehensive Explanations</h3>
+            <p class="mb-4">
+              For more complex content requests, such as explaining the benefits of physiotherapy, I consciously practiced "giving the model time to think." Instead of asking for a complete explanation in a single prompt, I would break down the request into smaller, sequential steps. For instance, when describing the role of muscle strengthening in knee pain reduction, I might first ask Gemini to list the key benefits. Then, in subsequent prompts, I would ask it to elaborate on each benefit with specific examples related to my recovery and the exercises I was performing. This step-by-step approach allowed Gemini to process the information more thoroughly and generate more comprehensive and well-reasoned explanations, mirroring a more thoughtful human writing process.
+            </p>
+  
+            <p class="mb-4">
+              By strategically employing these prompting techniques, I was able to leverage the power of AI to accelerate the website development while maintaining a strong focus on accuracy, desired aesthetics, and the overall quality of the information presented on "Rebuilding Strength."
+            </p>
+  
+            <p>
+              This experience highlighted the potential of AI as a powerful tool in web development, enabling rapid prototyping and content enhancement, allowing me to focus on the core purpose and message of "Rebuilding Strength."
+            </p>
+          </div>
+        </div>
+  
+        <!-- Important Message -->
+        <div class="mt-12 bg-emerald-900/30 rounded-xl p-6 border border-emerald-700/30">
+          <h3 class="text-xl font-semibold text-white mb-4">Important Message</h3>
+          <p class="text-gray-300">
+            While AI tools like V0 and Gemini significantly accelerated the development of this website, human oversight remains essential. As creators, we must carefully review and validate AI-generated content and code, ensuring accuracy, appropriateness, and alignment with our vision. The most effective approach combines AI's efficiency with human creativity and critical thinking—AI as a powerful assistant rather than a replacement for human judgment. This website represents that balanced collaboration, where technology amplifies human capability rather than substituting for it.
+          </p>
+        </div>
+  
+        <!-- Author Section -->
+        <div class="mt-12 flex items-center gap-4 pt-6 border-t border-gray-700">
+          <div>
+            <p class="text-white font-medium">Written by</p>
+            <p class="text-gray-400 text-sm">Saiprasad Hegde</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Related Posts Section -->
+  <section class="py-12 bg-gray-900">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8 text-center">More Posts</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Post 1 -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 hover:border-emerald-500/30 transition-all">
+            <div class="h-40 bg-gray-700 relative">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-gray-500">Coming Soon</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-white mb-2">My Physiotherapy Journey</h3>
+              <p class="text-gray-400 text-sm mb-4">Detailed insights into my rehabilitation process and the exercises that helped me recover.</p>
+              <div class="flex items-center text-xs text-gray-500">
+                <span>Coming Soon</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post 2 -->
+          <div class="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 hover:border-emerald-500/30 transition-all">
+            <div class="h-40 bg-gray-700 relative">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-gray-500">Coming Soon</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-white mb-2">Mental Health During Recovery</h3>
+              <p class="text-gray-400 text-sm mb-4">Strategies for maintaining positive mental health while dealing with physical injuries.</p>
+              <div class="flex items-center text-xs text-gray-500">
+                <span>Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
